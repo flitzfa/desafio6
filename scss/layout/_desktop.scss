@@ -1,0 +1,27 @@
+@import "../utilities/variables";
+
+/* media querie desktop */
+@media only screen and (min-width: 1024px){
+    /* header */
+    header h1 a{
+        font-size: 50px;
+    }
+
+    ul li a{
+        font-size: 25px;
+    }
+
+
+    /* main */
+    .h2{
+        font-size: 40px;
+    }
+    
+    .menuDecoration{
+        font-size: 30px;
+    }
+    
+    .menuDecorationText{
+        font-size: 20px;
+    }
+}

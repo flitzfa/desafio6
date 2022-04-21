@@ -1,0 +1,129 @@
+@import "../utilities/variables";
+
+/* media querie tablet */
+@media only screen and (min-width: 600px){
+    .contBody{
+        display: grid;
+        grid-template-areas: "headerGrid headerGrid"
+                             "mainGrid mainGrid"
+                             "footerGrid footerGrid";
+    }
+
+    .contBodyNosotros{
+        display: grid;
+        grid-template-areas: "headerGrid"
+                             "mainGridNosotros"
+                             "footerGrid";
+    }
+    
+
+
+    /* header */
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header h1 a{
+
+        font-size: 1em;
+    
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    nav a{
+        font-size: 15px;
+    }
+
+    /* main */
+    .mainGrid{
+        display: grid;
+        grid-template-areas: "h2 h2"
+                             "menu1 menu1Img"
+                             "menu1Text menu1Img"
+                             "menu2Img menu2"
+                             "menu2Img menu2Text";
+    }
+    
+    
+    h2{
+        padding-bottom: 30px;
+    }
+
+    .h2{
+        grid-area: h2;
+    }
+
+    .menu1{
+        grid-area: menu1;
+    }
+    
+    p .menu1{
+        display: flex;
+    }
+
+    .menuDecoration{
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuDecorationImg{
+        height: 300px;
+        padding: 9px;
+        margin-left: 20px;
+        display: flex;
+        justify-content:center;
+        
+    }
+
+    .menu1Img{
+        grid-area: menu1Img;
+        
+    }
+
+    .menu1Text{
+        grid-area: menu1Text;
+    }
+
+    .menu2{
+        grid-area: menu2;
+    }
+
+    .menu2Img{
+        grid-area: menu2Img;
+    }
+
+    .menu2Text{
+        grid-area: menu2Text;
+    }
+
+    .comienzo{
+        grid-area: comienzo;
+    }
+
+    .objetivo{
+        grid-area: objetivo;
+    }
+    
+    .formularioDiv{
+        display: flex;
+        justify-content: center;
+        width: 1300px;
+        margin-bottom: 15px;
+    }
+}
